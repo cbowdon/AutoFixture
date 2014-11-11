@@ -111,7 +111,7 @@ namespace Ploeh.AutoFixtureUnitTest
             var context = new SpecimenContext(fixture);
             var sut = new FreezeOnMatchCustomization(
                 frozenType,
-                new BaseTypeSpecification(frozenType));
+                new DirectBaseTypeSpecification(frozenType));
             // Exercise system
             sut.Customize(fixture);
             // Verify outcome
